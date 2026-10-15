@@ -1,2 +1,4 @@
 def test_setup_works():
-    assert 40 * 1 == 40  #16mm: 40 frames
+    frames_per_foot = 40 # 16mm
+    assert frames_per_foot * 2 == 80
+    
