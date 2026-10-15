@@ -1,0 +1,25 @@
+[project]
+name = "edgecode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Craig Webster", email = "webstc@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "opentimelineio>=0.18.1",
+]
+
+[project.scripts]
+edgecode = "edgecode:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.170.0",
+    "pytest>=9.1.1",
+]
